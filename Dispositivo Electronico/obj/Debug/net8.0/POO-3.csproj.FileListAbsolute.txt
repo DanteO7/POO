@@ -1,0 +1,14 @@
+C:\Users\Dante\source\repos\POO\POO-3\bin\Debug\net8.0\POO-3.exe
+C:\Users\Dante\source\repos\POO\POO-3\bin\Debug\net8.0\POO-3.deps.json
+C:\Users\Dante\source\repos\POO\POO-3\bin\Debug\net8.0\POO-3.runtimeconfig.json
+C:\Users\Dante\source\repos\POO\POO-3\bin\Debug\net8.0\POO-3.dll
+C:\Users\Dante\source\repos\POO\POO-3\bin\Debug\net8.0\POO-3.pdb
+C:\Users\Dante\source\repos\POO\POO-3\obj\Debug\net8.0\POO-3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dante\source\repos\POO\POO-3\obj\Debug\net8.0\POO-3.AssemblyInfoInputs.cache
+C:\Users\Dante\source\repos\POO\POO-3\obj\Debug\net8.0\POO-3.AssemblyInfo.cs
+C:\Users\Dante\source\repos\POO\POO-3\obj\Debug\net8.0\POO-3.csproj.CoreCompileInputs.cache
+C:\Users\Dante\source\repos\POO\POO-3\obj\Debug\net8.0\POO-3.dll
+C:\Users\Dante\source\repos\POO\POO-3\obj\Debug\net8.0\refint\POO-3.dll
+C:\Users\Dante\source\repos\POO\POO-3\obj\Debug\net8.0\POO-3.pdb
+C:\Users\Dante\source\repos\POO\POO-3\obj\Debug\net8.0\POO-3.genruntimeconfig.cache
+C:\Users\Dante\source\repos\POO\POO-3\obj\Debug\net8.0\ref\POO-3.dll

@@ -1,0 +1,14 @@
+C:\Users\Dante\source\repos\POO\Cuenta Bancaria\bin\Debug\net8.0\Cuenta Bancaria.exe
+C:\Users\Dante\source\repos\POO\Cuenta Bancaria\bin\Debug\net8.0\Cuenta Bancaria.deps.json
+C:\Users\Dante\source\repos\POO\Cuenta Bancaria\bin\Debug\net8.0\Cuenta Bancaria.runtimeconfig.json
+C:\Users\Dante\source\repos\POO\Cuenta Bancaria\bin\Debug\net8.0\Cuenta Bancaria.dll
+C:\Users\Dante\source\repos\POO\Cuenta Bancaria\bin\Debug\net8.0\Cuenta Bancaria.pdb
+C:\Users\Dante\source\repos\POO\Cuenta Bancaria\obj\Debug\net8.0\Cuenta Bancaria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dante\source\repos\POO\Cuenta Bancaria\obj\Debug\net8.0\Cuenta Bancaria.AssemblyInfoInputs.cache
+C:\Users\Dante\source\repos\POO\Cuenta Bancaria\obj\Debug\net8.0\Cuenta Bancaria.AssemblyInfo.cs
+C:\Users\Dante\source\repos\POO\Cuenta Bancaria\obj\Debug\net8.0\Cuenta Bancaria.csproj.CoreCompileInputs.cache
+C:\Users\Dante\source\repos\POO\Cuenta Bancaria\obj\Debug\net8.0\Cuenta Bancaria.dll
+C:\Users\Dante\source\repos\POO\Cuenta Bancaria\obj\Debug\net8.0\refint\Cuenta Bancaria.dll
+C:\Users\Dante\source\repos\POO\Cuenta Bancaria\obj\Debug\net8.0\Cuenta Bancaria.pdb
+C:\Users\Dante\source\repos\POO\Cuenta Bancaria\obj\Debug\net8.0\Cuenta Bancaria.genruntimeconfig.cache
+C:\Users\Dante\source\repos\POO\Cuenta Bancaria\obj\Debug\net8.0\ref\Cuenta Bancaria.dll

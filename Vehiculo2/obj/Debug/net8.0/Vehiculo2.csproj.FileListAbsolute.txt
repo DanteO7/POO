@@ -1,0 +1,14 @@
+C:\Users\Dante\source\repos\POO\Vehiculo2\bin\Debug\net8.0\Vehiculo2.exe
+C:\Users\Dante\source\repos\POO\Vehiculo2\bin\Debug\net8.0\Vehiculo2.deps.json
+C:\Users\Dante\source\repos\POO\Vehiculo2\bin\Debug\net8.0\Vehiculo2.runtimeconfig.json
+C:\Users\Dante\source\repos\POO\Vehiculo2\bin\Debug\net8.0\Vehiculo2.dll
+C:\Users\Dante\source\repos\POO\Vehiculo2\bin\Debug\net8.0\Vehiculo2.pdb
+C:\Users\Dante\source\repos\POO\Vehiculo2\obj\Debug\net8.0\Vehiculo2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dante\source\repos\POO\Vehiculo2\obj\Debug\net8.0\Vehiculo2.AssemblyInfoInputs.cache
+C:\Users\Dante\source\repos\POO\Vehiculo2\obj\Debug\net8.0\Vehiculo2.AssemblyInfo.cs
+C:\Users\Dante\source\repos\POO\Vehiculo2\obj\Debug\net8.0\Vehiculo2.csproj.CoreCompileInputs.cache
+C:\Users\Dante\source\repos\POO\Vehiculo2\obj\Debug\net8.0\Vehiculo2.dll
+C:\Users\Dante\source\repos\POO\Vehiculo2\obj\Debug\net8.0\refint\Vehiculo2.dll
+C:\Users\Dante\source\repos\POO\Vehiculo2\obj\Debug\net8.0\Vehiculo2.pdb
+C:\Users\Dante\source\repos\POO\Vehiculo2\obj\Debug\net8.0\Vehiculo2.genruntimeconfig.cache
+C:\Users\Dante\source\repos\POO\Vehiculo2\obj\Debug\net8.0\ref\Vehiculo2.dll
