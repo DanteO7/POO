@@ -1,0 +1,15 @@
+C:\Users\Dante\source\repos\POO\InstrumentoMusical\bin\Debug\net8.0\InstrumentoMusical.exe
+C:\Users\Dante\source\repos\POO\InstrumentoMusical\bin\Debug\net8.0\InstrumentoMusical.deps.json
+C:\Users\Dante\source\repos\POO\InstrumentoMusical\bin\Debug\net8.0\InstrumentoMusical.runtimeconfig.json
+C:\Users\Dante\source\repos\POO\InstrumentoMusical\bin\Debug\net8.0\InstrumentoMusical.dll
+C:\Users\Dante\source\repos\POO\InstrumentoMusical\bin\Debug\net8.0\InstrumentoMusical.pdb
+C:\Users\Dante\source\repos\POO\InstrumentoMusical\obj\Debug\net8.0\InstrumentoMusical.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dante\source\repos\POO\InstrumentoMusical\obj\Debug\net8.0\InstrumentoMusical.AssemblyInfoInputs.cache
+C:\Users\Dante\source\repos\POO\InstrumentoMusical\obj\Debug\net8.0\InstrumentoMusical.AssemblyInfo.cs
+C:\Users\Dante\source\repos\POO\InstrumentoMusical\obj\Debug\net8.0\InstrumentoMusical.csproj.CoreCompileInputs.cache
+C:\Users\Dante\source\repos\POO\InstrumentoMusical\obj\Debug\net8.0\InstrumentoMusical.sourcelink.json
+C:\Users\Dante\source\repos\POO\InstrumentoMusical\obj\Debug\net8.0\InstrumentoMusical.dll
+C:\Users\Dante\source\repos\POO\InstrumentoMusical\obj\Debug\net8.0\refint\InstrumentoMusical.dll
+C:\Users\Dante\source\repos\POO\InstrumentoMusical\obj\Debug\net8.0\InstrumentoMusical.pdb
+C:\Users\Dante\source\repos\POO\InstrumentoMusical\obj\Debug\net8.0\InstrumentoMusical.genruntimeconfig.cache
+C:\Users\Dante\source\repos\POO\InstrumentoMusical\obj\Debug\net8.0\ref\InstrumentoMusical.dll
