@@ -1,4 +1,4 @@
-﻿class Producto
+class Producto
 {
     public string Codigo { get; private set; }
     public string Nombre { get; private set; }
@@ -29,7 +29,8 @@
     }
     public void ActualizarStock(int cantidad)
     {
-        if (CantidadStock + cantidad >= 0 && CantidadStock + cantidad <= CantidadStock)
+        int cantidadStockTotal = CantidadStock;
+        if (CantidadStock + cantidad >= 0 && CantidadStock + cantidad <= 10)
         {
             CantidadStock += cantidad;
             Console.WriteLine($"Stock actualizado a: {CantidadStock}");
@@ -49,26 +50,33 @@ class OrdenCompra
     }
     public void AgregarProducto(Producto producto, int cantidadAgregar)
     {
-        if (cantidadAgregar <=  producto.CantidadStock)
+        if (cantidadAgregar > producto.CantidadStock)
         {
-            _productos.Add(producto);
-            Console.WriteLine($"Usted ha agregado: {producto.Nombre} al carrito");
+            Console.WriteLine($"No se pudo agregar '{producto.Nombre}' al carrito");
         }
         else
         {
-            Console.WriteLine($"No se pudo agregar '{producto.Nombre}' al carrito");
+            for (int i = 0; i < cantidadAgregar; i++)
+            {
+                _productos.Add(producto);
+            }
+            Console.WriteLine($"Usted ha agregado {cantidadAgregar} {producto.Nombre} al carrito");
         }
     }
     public void SacarProducto(Producto producto, int cantidadSacar)
     {
-        if (cantidadSacar <= _productos.Count)
+        int cantidadEnCarrito = _productos.Count;
+        if (cantidadSacar > cantidadEnCarrito)
         {
-            _productos.Remove(producto);
-            Console.WriteLine($"Usted ha sacado: {producto.Nombre} del carrito");
+            Console.WriteLine($"No se pudo sacar '{producto.Nombre}' del carrito");
         }
         else
         {
-            Console.WriteLine($"No se pudo sacar '{producto.Nombre}' del carrito");
+            for (int i=0; i<cantidadSacar;i++)
+            {
+                _productos.Remove(producto);
+            }
+            Console.WriteLine($"Usted ha sacado {cantidadSacar} {producto.Nombre} del carrito");
         }
     }
     public decimal CalcularTotal()
@@ -101,6 +109,10 @@ class OrdenCompra
             return false;
         }
     }
+    public void VaciarCarrito()
+    {
+        _productos.Clear();
+    }
 }
 class Program
 {
@@ -130,11 +142,8 @@ class Program
                     Console.Write("Seleccione la cantidad que desea comprar: ");
                     int cantidadAgregar;
                     int.TryParse(Console.ReadLine(), out cantidadAgregar);
+                    ordenDeComprita.AgregarProducto(productito, cantidadAgregar);
                     productito.ActualizarStock(-cantidadAgregar);
-                    for (int i=0; i < cantidadAgregar; i++)
-                    {
-                        ordenDeComprita.AgregarProducto(productito, -cantidadAgregar);
-                    }
                     break;
                 case 3:
                     if (ordenDeComprita.OrdenCompraVacia())
@@ -142,11 +151,8 @@ class Program
                         Console.Write("Seleccione la cantidad que desea sacar del carrito: ");
                         int cantidadSacar;
                         int.TryParse(Console.ReadLine(), out cantidadSacar);
+                        ordenDeComprita.SacarProducto(productito, cantidadSacar);
                         productito.ActualizarStock(cantidadSacar);
-                        for (int i = 0; i < cantidadSacar; i++)
-                        {
-                            ordenDeComprita.SacarProducto(productito, cantidadSacar);
-                        }
                     }
                     else
                     {
@@ -181,9 +187,38 @@ class Program
                             case 1:
                                 Console.WriteLine("Felicidades, Usted ha comprado: ");
                                 ordenDeComprita.MostrarDetalleOrden();
+                                ordenDeComprita.VaciarCarrito();
                                 banderaConfirmacion = false;
-                                banderaSalir = false;
-                                bandera = false;
+                                Console.WriteLine("\nSeleccione la accion que desea realizar");
+                                Console.WriteLine("1 - Seguir Comprando");
+                                Console.WriteLine("2 - Salir Del programa");
+                                int seguirComprando;
+                                int.TryParse(Console.ReadLine(), out seguirComprando);
+                                bool banderaFinal = true;        
+                                while (banderaFinal)
+                                {
+                                   switch (seguirComprando)
+                                   {
+                                        case 1:
+                                                banderaFinal = false;
+                                                break;
+                                        case 2:
+                                                banderaFinal = false;
+                                                banderaSalir = false;
+                                                bandera = false;
+                                                break;
+                                        default:
+                                                Console.WriteLine("ERROR. Ingrese una accion válida\n");
+                                                break;
+                                        }
+                                        if (banderaFinal)
+                                        {
+                                            Console.WriteLine("\nSeleccione la accion que desea realizar");
+                                            Console.WriteLine("1 - Seguir Comprando");
+                                            Console.WriteLine("2 - Salir Del programa");
+                                            int.TryParse(Console.ReadLine(), out seguirComprando);
+                                        }
+                                }
                                 break;
                             case 2:
                                 banderaConfirmacion = false;
