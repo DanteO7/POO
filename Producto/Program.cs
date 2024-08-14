@@ -3,23 +3,26 @@ class Producto
     public string Codigo { get; private set; }
     public string Nombre { get; private set; }
     public int CantidadStock { get; private set; }
+    public int CantidadStockInicial { get; private set; }
     public decimal Precio { get; private set; }
-    public Producto(string codigo, string nombre, int cantidadStock, decimal precio)
+    public Producto(string codigo, string nombre, int cantidadStock, int cantidadStockInicial, decimal precio)
     {
         Codigo = codigo;
         Nombre = nombre;
         CantidadStock = cantidadStock;
+        CantidadStockInicial = cantidadStockInicial;
         Precio = precio;
     }
     public void MostrarInformacionProducto()
     {
         Console.WriteLine($"Nombre: {Nombre}, Código: {Codigo}, Precio: {Precio:C}, Cantidad en Stock: {CantidadStock}");
     }
-    public void ActualizarStockEmpresa(int cantidad)
+    public void ActualizarStockBase(int cantidad)
     {
         if (CantidadStock + cantidad >=0)
         {
             CantidadStock += cantidad;
+            CantidadStockInicial += cantidad;
             Console.WriteLine($"Stock actualizado a: {CantidadStock}");
         }
         else
@@ -29,8 +32,7 @@ class Producto
     }
     public void ActualizarStock(int cantidad)
     {
-        int cantidadStockTotal = CantidadStock;
-        if (CantidadStock + cantidad >= 0 && CantidadStock + cantidad <= 10)
+        if (CantidadStock + cantidad >= 0 && CantidadStock + cantidad <= CantidadStockInicial)
         {
             CantidadStock += cantidad;
             Console.WriteLine($"Stock actualizado a: {CantidadStock}");
@@ -52,7 +54,8 @@ class OrdenCompra
     {
         if (cantidadAgregar > producto.CantidadStock)
         {
-            Console.WriteLine($"No se pudo agregar '{producto.Nombre}' al carrito");
+            Console.WriteLine($"No se pudo agregar {cantidadAgregar} '{producto.Nombre}' al carrito");
+            Console.WriteLine($"En este momento hay {producto.CantidadStock} '{producto.Nombre}' en Stock\n");
         }
         else
         {
@@ -60,7 +63,7 @@ class OrdenCompra
             {
                 _productos.Add(producto);
             }
-            Console.WriteLine($"Usted ha agregado {cantidadAgregar} {producto.Nombre} al carrito");
+            Console.WriteLine($"Usted ha agregado {cantidadAgregar} '{producto.Nombre}' al carrito");
         }
     }
     public void SacarProducto(Producto producto, int cantidadSacar)
@@ -68,7 +71,8 @@ class OrdenCompra
         int cantidadEnCarrito = _productos.Count;
         if (cantidadSacar > cantidadEnCarrito)
         {
-            Console.WriteLine($"No se pudo sacar '{producto.Nombre}' del carrito");
+            Console.WriteLine($"No se pudo sacar {cantidadSacar} '{producto.Nombre}' del carrito");
+            Console.WriteLine($"En este momento hay {cantidadEnCarrito} '{producto.Nombre}' en el carrito\n");
         }
         else
         {
@@ -76,7 +80,7 @@ class OrdenCompra
             {
                 _productos.Remove(producto);
             }
-            Console.WriteLine($"Usted ha sacado {cantidadSacar} {producto.Nombre} del carrito");
+            Console.WriteLine($"Usted ha sacado {cantidadSacar} '{producto.Nombre}' del carrito");
         }
     }
     public decimal CalcularTotal()
@@ -118,7 +122,7 @@ class Program
 {
     static void Main()
     {
-        Producto productito = new Producto("COD_1", "Coca-Cola", 10, 2500);
+        Producto productito = new Producto("COD_1", "Coca-Cola", 10, 10, 2500);
         OrdenCompra ordenDeComprita = new OrdenCompra();
         bool bandera = true;
         bool banderaSalir = true;
@@ -139,7 +143,7 @@ class Program
                     productito.MostrarInformacionProducto();
                     break;
                 case 2:
-                    Console.Write("Seleccione la cantidad que desea comprar: ");
+                    Console.Write("Seleccione la cantidad que desea agregar al carrito: ");
                     int cantidadAgregar;
                     int.TryParse(Console.ReadLine(), out cantidadAgregar);
                     ordenDeComprita.AgregarProducto(productito, cantidadAgregar);
